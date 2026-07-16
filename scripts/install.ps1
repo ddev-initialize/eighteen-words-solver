@@ -3,7 +3,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-$repo = if ($env:EIGHTEEN_WORDS_REPO) { $env:EIGHTEEN_WORDS_REPO } else { "ddevpost/eighteen-words-solver" }
+$repo = if ($env:EIGHTEEN_WORDS_REPO) { $env:EIGHTEEN_WORDS_REPO } else { "ddev-initialize/eighteen-words-solver" }
 $architecture = [System.Runtime.InteropServices.RuntimeInformation]::OSArchitecture.ToString()
 $arch = if ($architecture -eq "Arm64") { "arm64" } elseif ($architecture -eq "X64") { "amd64" } else { throw "Unsupported architecture: $architecture" }
 $asset = "eighteen-words-solver-windows-$arch.zip"

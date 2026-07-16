@@ -1,7 +1,7 @@
 #!/bin/sh
 set -eu
 
-repo="${EIGHTEEN_WORDS_REPO:-ddevpost/eighteen-words-solver}"
+repo="${EIGHTEEN_WORDS_REPO:-ddev-initialize/eighteen-words-solver}"
 install_dir="${INSTALL_DIR:-$HOME/.local/bin}"
 
 case "$(uname -s)" in

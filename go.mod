@@ -1,4 +1,4 @@
-module github.com/ddevpost/eighteen-words-solver
+module github.com/ddev-initialize/eighteen-words-solver
 
 go 1.26
 
